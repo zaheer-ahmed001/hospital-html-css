@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us — MedCare Hospital</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">
+      <div class="logo-icon">+</div>
+      <span class="logo-text">Med<span>Care</span></span>
+    </a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="doctors.html">Doctors</a></li>
+      <li><a href="appointment.html">Appointment</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="appointment.html" class="nav-cta">Book Now</a></li>
+    </ul>
+    <span class="hamburger">&#9776;</span>
+  </nav>
+
+  <div class="page-header">
+    <h1>Contact Us</h1>
+    <p>We're here to help — reach us by phone, email, or visit us in person</p>
+  </div>
+
+  <section>
+    <div class="contact-grid">
+      <div>
+        <div class="section-label">Get In Touch</div>
+        <div class="section-title">We'd Love to Hear From You</div>
+        <p class="section-sub">Whether you have a question about a service, need directions, or want to share feedback — our team is ready to assist.</p>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="c-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+18001234567">+1 (800) 123-4567 — General Inquiries</a>
+              <a href="tel:+18009112273">+1 (800) 911-CARE — Emergency Line (24/7)</a>
+              <a href="tel:+18005551234">+1 (800) 555-1234 — Appointments Desk</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="c-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:info@medcare.com">info@medcare.com — General Enquiries</a>
+              <a href="mailto:appointments@medcare.com">appointments@medcare.com — Bookings</a>
+              <a href="mailto:international@medcare.com">international@medcare.com — International Patients</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="c-icon">📍</div>
+            <div>
+              <h4>Main Hospital Address</h4>
+              <p>14 Health Avenue, Medical District<br/>City Center — 75500<br/>Open daily including weekends</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="c-icon">🕐</div>
+            <div>
+              <h4>Working Hours</h4>
+              <p>
+                Monday – Friday: 8:00 AM – 8:00 PM<br/>
+                Saturday: 9:00 AM – 5:00 PM<br/>
+                Sunday: 10:00 AM – 3:00 PM<br/>
+                Emergency Department: 24 hours, 7 days
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-placeholder">
+          📍 Interactive Map — 14 Health Avenue, Medical District
+        </div>
+      </div>
+
+      <div>
+        <div class="form-card">
+          <h2>Send Us a Message</h2>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="c-fname">First Name *</label>
+                <input type="text" id="c-fname" placeholder="Your first name" required/>
+              </div>
+              <div class="form-group">
+                <label for="c-lname">Last Name *</label>
+                <input type="text" id="c-lname" placeholder="Your last name" required/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="c-email">Email Address *</label>
+              <input type="email" id="c-email" placeholder="you@email.com" required/>
+            </div>
+            <div class="form-group">
+              <label for="c-phone">Phone Number</label>
+              <input type="tel" id="c-phone" placeholder="+1 (000) 000-0000"/>
+            </div>
+            <div class="form-group">
+              <label for="c-subject">Subject *</label>
+              <select id="c-subject" required>
+                <option value="">Select a topic</option>
+                <option>General Inquiry</option>
+                <option>Appointment Information</option>
+                <option>Billing & Insurance</option>
+                <option>Medical Records Request</option>
+                <option>Patient Feedback / Complaint</option>
+                <option>International Patient Services</option>
+                <option>Media & Press Inquiry</option>
+                <option>Career / Job Application</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="c-msg">Your Message *</label>
+              <textarea id="c-msg" placeholder="Write your message here..." required></textarea>
+            </div>
+            <div class="form-group">
+              <label>
+                <input type="checkbox" required style="width:auto; margin-right:8px;"/>
+                I agree to the Privacy Policy and consent to MedCare Hospital processing my data to respond to this inquiry.
+              </label>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+            <div class="success-msg" id="contactSuccess">
+              ✅ Thank you for reaching out! A member of our team will respond within 1 business day.
+            </div>
+          </form>
+        </div>
+
+        <div class="why-card" style="margin-top: 24px; border-left-color: var(--accent);">
+          <h3 style="color: var(--accent);">🏥 Satellite Clinics & Outreach Centers</h3>
+          <p style="margin-top: 8px; font-size: 0.88rem;">MedCare operates 4 satellite clinics across the city for routine consultations closer to you. Call our appointments desk for the clinic nearest your area.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPARTMENTS DIRECTORY -->
+  <section class="services-bg">
+    <div class="section-label">Department Directory</div>
+    <div class="section-title">Direct Department Contacts</div>
+    <p class="section-sub">For faster service, reach the relevant department directly.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">❤️</div>
+        <h3>Cardiology</h3>
+        <p>Ext. 201 · cardio@medcare.com<br/>Mon–Fri: 9 AM – 5 PM</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🧠</div>
+        <h3>Neurology</h3>
+        <p>Ext. 204 · neuro@medcare.com<br/>Mon–Fri: 9 AM – 5 PM</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🦴</div>
+        <h3>Orthopedics</h3>
+        <p>Ext. 207 · ortho@medcare.com<br/>Mon–Sat: 8 AM – 4 PM</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">👶</div>
+        <h3>Pediatrics</h3>
+        <p>Ext. 210 · peds@medcare.com<br/>Mon–Sun: 8 AM – 8 PM</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔬</div>
+        <h3>Oncology</h3>
+        <p>Ext. 215 · oncology@medcare.com<br/>Mon–Fri: 9 AM – 5 PM</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🚑</div>
+        <h3>Emergency</h3>
+        <p>Ext. 911 (Direct)<br/>Open 24 hours, 7 days</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">+</div>
+          <span class="logo-text">Med<span>Care</span></span>
+        </div>
+        <p>Trusted, compassionate healthcare for over 25 years.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="appointment.html">Appointment</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Departments</h4>
+        <ul>
+          <li><a href="#">Cardiology</a></li>
+          <li><a href="#">Neurology</a></li>
+          <li><a href="#">Orthopedics</a></li>
+          <li><a href="#">Oncology</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">📞 +1 (800) 123-4567</a></li>
+          <li><a href="#">✉️ info@medcare.com</a></li>
+          <li><a href="#">🕐 Emergency: 24/7</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 MedCare Hospital. All rights reserved.</span>
+      <span>Privacy Policy · Terms of Service</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

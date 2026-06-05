@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Doctors — MedCare Hospital</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">
+      <div class="logo-icon">+</div>
+      <span class="logo-text">Med<span>Care</span></span>
+    </a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="doctors.html" class="active">Doctors</a></li>
+      <li><a href="appointment.html">Appointment</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="appointment.html" class="nav-cta">Book Now</a></li>
+    </ul>
+    <span class="hamburger">&#9776;</span>
+  </nav>
+
+  <div class="page-header">
+    <h1>Our Medical Team</h1>
+    <p>Board-certified specialists committed to your health and well-being</p>
+  </div>
+
+  <section>
+    <div class="section-label">Filter by Department</div>
+    <div class="section-title">Find Your Specialist</div>
+    <p class="section-sub">Browse our doctors by department or scroll to view all. Each specialist brings years of focused expertise to their field.</p>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All Departments</button>
+      <button class="filter-btn" data-filter="cardiology">Cardiology</button>
+      <button class="filter-btn" data-filter="neurology">Neurology</button>
+      <button class="filter-btn" data-filter="orthopedics">Orthopedics</button>
+      <button class="filter-btn" data-filter="pediatrics">Pediatrics</button>
+      <button class="filter-btn" data-filter="oncology">Oncology</button>
+      <button class="filter-btn" data-filter="general">General Medicine</button>
+    </div>
+
+    <div class="doctors-grid">
+      <div class="doctor-card" data-dept="cardiology">
+        <div class="doctor-img">👨‍⚕️</div>
+        <div class="doctor-info">
+          <h3>Dr. Arjun Mehra</h3>
+          <div class="doctor-spec">Interventional Cardiologist</div>
+          <p class="doctor-meta">MBBS, MD, DM Cardiology · 22 Yrs Experience</p>
+          <a href="appointment.html" class="btn-sm">Book Appointment</a>
+        </div>
+      </div>
+      <div class="doctor-card" data-dept="cardiology">
+        <div class="doctor-img">👩‍⚕️</div>
+        <div class="doctor-info">
+          <h3>Dr. Priya Kapoor</h3>
+          <div class="doctor-spec">Cardiac Electrophysiologist</div>
+          <p class="doctor-meta">MBBS, DM, FACC · 17 Yrs Experience</p>
+          <a href="appointment.html" class="btn-sm">Book Appointment</a>
+        </div>
+      </div>
+      <div class="doctor-card" data-dept="neurology">
+        <div class="doctor-img">👩‍⚕️</div>
+        <div class="doctor-info">
+          <h3>Dr. Sara Qureshi</h3>
+          <div class="doctor-spec">Senior Neurologist</div>
+          <p class="doctor-meta">MBBS, MRCP, PhD · 18 Yrs Experience</p>
+          <a href="appointment.html" class="btn-sm">Book Appointment</a>
+        </div>
+      </div>
+      <div class="doctor-card" data-dept="neurology">
+        <div class="doctor-img">👨‍⚕️</div>
+        <div class="doctor-info">
+          <h3>Dr. Rahul Verma</h3>
+          <div class="doctor-spec">Neurosurgeon</div>
+          <p class="doctor-meta">MBBS, MS, MCh Neurosurgery · 20 Yrs Experience</p>
+          <a href="appointment.html" class="btn-sm">Book Appointment</a>
+        </div>
+      </div>
+      <div class="doctor-card" data-dept="orthopedics">
+        <div class="doctor-img">👨‍⚕️</div>
+        <div class="doctor-info">
+          <h3>Dr. Faisal Hameed</h3>
+          <div class="doctor-spec">Orthopedic Surgeon</div>
+          <p class="doctor-meta">MBBS, MS, FRCS · 16 Yrs Experience</p>
+          <a href="appointment.html" class="btn-sm">Book Appointment</a>
+        </div>
+      </div>
+      <div class="doctor-card" data-dept="orthopedics">
+        <div class="doctor-img">👩‍⚕️</div>
+        <div class="doctor-info">
+          <h3>Dr. Nadia Shah</h3>
+          <div class="doctor-spec">Spine & Sports Medicine</div>
+          <p class="doctor-meta">MBBS, DNB Ortho, Fellowship · 12 Yrs Experience</p>
+          <a href="appointment.html" class="btn-sm">Book Appointment</a>
+        </div>
+      </div>
+      <div class="doctor-card" data-dept="pediatrics">
+        <div class="doctor-img">👩‍⚕️</div>
+        <div class="doctor-info">
+          <h3>Dr. Ayesha Noor</h3>
+          <div class="doctor-spec">Pediatric Specialist</div>
+          <p class="doctor-meta">MBBS, MD Pediatrics · 14 Yrs Experience</p>
+          <a href="appointment.html" class="btn-sm">Book Appointment</a>
+        </div>
+      </div>
+      <div class="doctor-card" data-dept="oncology">
+        <div class="doctor-img">👨‍⚕️</div>
+        <div class="doctor-info">
+          <h3>Dr. Imran Chaudhry</h3>
+          <div class="doctor-spec">Medical Oncologist</div>
+          <p class="doctor-meta">MBBS, MD, DM Oncology · 19 Yrs Experience</p>
+          <a href="appointment.html" class="btn-sm">Book Appointment</a>
+        </div>
+      </div>
+      <div class="doctor-card" data-dept="general">
+        <div class="doctor-img">👩‍⚕️</div>
+        <div class="doctor-info">
+          <h3>Dr. Hana Malik</h3>
+          <div class="doctor-spec">General Physician</div>
+          <p class="doctor-meta">MBBS, FCPS Medicine · 10 Yrs Experience</p>
+          <a href="appointment.html" class="btn-sm">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMING TABLE -->
+  <section class="services-bg">
+    <div class="section-label">Availability</div>
+    <div class="section-title">Doctor Consultation Timings</div>
+    <p class="section-sub">All timings are in local time. Please arrive 15 minutes early for your scheduled slot.</p>
+
+    <table class="timing-table">
+      <thead>
+        <tr>
+          <th>Doctor</th>
+          <th>Department</th>
+          <th>Monday–Wednesday</th>
+          <th>Thursday–Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dr. Arjun Mehra</td>
+          <td>Cardiology</td>
+          <td class="available">9:00 AM – 1:00 PM</td>
+          <td class="available">2:00 PM – 6:00 PM</td>
+          <td class="available">10:00 AM – 1:00 PM</td>
+          <td class="unavailable">Off</td>
+        </tr>
+        <tr>
+          <td>Dr. Sara Qureshi</td>
+          <td>Neurology</td>
+          <td class="available">10:00 AM – 2:00 PM</td>
+          <td class="available">10:00 AM – 2:00 PM</td>
+          <td class="unavailable">Off</td>
+          <td class="unavailable">Off</td>
+        </tr>
+        <tr>
+          <td>Dr. Faisal Hameed</td>
+          <td>Orthopedics</td>
+          <td class="available">8:00 AM – 12:00 PM</td>
+          <td class="available">3:00 PM – 7:00 PM</td>
+          <td class="available">9:00 AM – 12:00 PM</td>
+          <td class="unavailable">Off</td>
+        </tr>
+        <tr>
+          <td>Dr. Ayesha Noor</td>
+          <td>Pediatrics</td>
+          <td class="available">11:00 AM – 3:00 PM</td>
+          <td class="available">11:00 AM – 3:00 PM</td>
+          <td class="available">10:00 AM – 1:00 PM</td>
+          <td class="available">10:00 AM – 12:00 PM</td>
+        </tr>
+        <tr>
+          <td>Dr. Imran Chaudhry</td>
+          <td>Oncology</td>
+          <td class="available">9:00 AM – 1:00 PM</td>
+          <td class="available">9:00 AM – 1:00 PM</td>
+          <td class="unavailable">Off</td>
+          <td class="unavailable">Off</td>
+        </tr>
+        <tr>
+          <td>Dr. Priya Kapoor</td>
+          <td>Cardiology</td>
+          <td class="available">2:00 PM – 6:00 PM</td>
+          <td class="available">10:00 AM – 2:00 PM</td>
+          <td class="available">10:00 AM – 1:00 PM</td>
+          <td class="unavailable">Off</td>
+        </tr>
+        <tr>
+          <td>Dr. Rahul Verma</td>
+          <td>Neurosurgery</td>
+          <td class="available">8:00 AM – 12:00 PM</td>
+          <td class="available">8:00 AM – 12:00 PM</td>
+          <td class="unavailable">Off</td>
+          <td class="unavailable">Off</td>
+        </tr>
+        <tr>
+          <td>Dr. Hana Malik</td>
+          <td>General Medicine</td>
+          <td class="available">9:00 AM – 5:00 PM</td>
+          <td class="available">9:00 AM – 5:00 PM</td>
+          <td class="available">9:00 AM – 2:00 PM</td>
+          <td class="available">10:00 AM – 1:00 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">+</div>
+          <span class="logo-text">Med<span>Care</span></span>
+        </div>
+        <p>Trusted, compassionate healthcare for over 25 years.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="appointment.html">Appointment</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Departments</h4>
+        <ul>
+          <li><a href="#">Cardiology</a></li>
+          <li><a href="#">Neurology</a></li>
+          <li><a href="#">Orthopedics</a></li>
+          <li><a href="#">Oncology</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">📞 +1 (800) 123-4567</a></li>
+          <li><a href="#">✉️ info@medcare.com</a></li>
+          <li><a href="#">🕐 Emergency: 24/7</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 MedCare Hospital. All rights reserved.</span>
+      <span>Privacy Policy · Terms of Service</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

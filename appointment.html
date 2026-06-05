@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book an Appointment — MedCare Hospital</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">
+      <div class="logo-icon">+</div>
+      <span class="logo-text">Med<span>Care</span></span>
+    </a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="doctors.html">Doctors</a></li>
+      <li><a href="appointment.html" class="active">Appointment</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="appointment.html" class="nav-cta">Book Now</a></li>
+    </ul>
+    <span class="hamburger">&#9776;</span>
+  </nav>
+
+  <div class="page-header">
+    <h1>Book an Appointment</h1>
+    <p>Schedule a consultation with one of our specialists — online, fast, and hassle-free</p>
+  </div>
+
+  <section>
+    <div class="appointment-wrapper">
+      <div class="appt-info">
+        <h2>How It Works</h2>
+        <p>Fill out the form and our team will confirm your appointment within 2 business hours via phone or email. Walk-ins are also welcome during consultation hours.</p>
+        <div class="info-items">
+          <div class="info-item">
+            <div class="icon">📋</div>
+            <div>
+              <strong>Fill the Form</strong>
+              <span>Provide your details and preferred doctor or department.</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="icon">📞</div>
+            <div>
+              <strong>Confirmation Call</strong>
+              <span>Our front desk will call you to confirm the exact slot.</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="icon">🏥</div>
+            <div>
+              <strong>Visit the Hospital</strong>
+              <span>Arrive 15 minutes early. Bring a valid ID and any prior medical records.</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="icon">💊</div>
+            <div>
+              <strong>Follow-Up Care</strong>
+              <span>After consultation, our team arranges any required tests or referrals.</span>
+            </div>
+          </div>
+        </div>
+
+        <br/>
+        <div class="info-item" style="margin-top:24px;">
+          <div class="icon">🚨</div>
+          <div>
+            <strong>Emergency?</strong>
+            <span>Call <strong>+1 (800) 911-CARE</strong> or visit our Emergency Department immediately. Do not use this form for emergencies.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h2>Appointment Request Form</h2>
+        <form id="appointmentForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name *</label>
+              <input type="text" id="fname" placeholder="e.g. Ahmad" required/>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name *</label>
+              <input type="text" id="lname" placeholder="e.g. Raza" required/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" placeholder="you@email.com" required/>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" placeholder="+1 (000) 000-0000" required/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="dob">Date of Birth</label>
+              <input type="date" id="dob"/>
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select id="gender">
+                <option value="">Select</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Prefer not to say</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="dept">Department / Specialty *</label>
+            <select id="dept" required>
+              <option value="">Select Department</option>
+              <option>Cardiology</option>
+              <option>Neurology</option>
+              <option>Orthopedics</option>
+              <option>Pediatrics</option>
+              <option>Oncology</option>
+              <option>General Medicine</option>
+              <option>Gynecology & Obstetrics</option>
+              <option>Dermatology</option>
+              <option>Ophthalmology</option>
+              <option>ENT (Ear, Nose & Throat)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="doctor">Preferred Doctor (Optional)</label>
+            <select id="doctor">
+              <option value="">No Preference</option>
+              <option>Dr. Arjun Mehra — Cardiology</option>
+              <option>Dr. Priya Kapoor — Cardiology</option>
+              <option>Dr. Sara Qureshi — Neurology</option>
+              <option>Dr. Rahul Verma — Neurosurgery</option>
+              <option>Dr. Faisal Hameed — Orthopedics</option>
+              <option>Dr. Nadia Shah — Orthopedics</option>
+              <option>Dr. Ayesha Noor — Pediatrics</option>
+              <option>Dr. Imran Chaudhry — Oncology</option>
+              <option>Dr. Hana Malik — General Medicine</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="appt-date">Preferred Date *</label>
+              <input type="date" id="appt-date" required/>
+            </div>
+            <div class="form-group">
+              <label for="appt-time">Preferred Time *</label>
+              <select id="appt-time" required>
+                <option value="">Select Time</option>
+                <option>8:00 AM – 9:00 AM</option>
+                <option>9:00 AM – 10:00 AM</option>
+                <option>10:00 AM – 11:00 AM</option>
+                <option>11:00 AM – 12:00 PM</option>
+                <option>12:00 PM – 1:00 PM</option>
+                <option>2:00 PM – 3:00 PM</option>
+                <option>3:00 PM – 4:00 PM</option>
+                <option>4:00 PM – 5:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="appt-type">Appointment Type *</label>
+            <select id="appt-type" required>
+              <option value="">Select Type</option>
+              <option>New Patient Consultation</option>
+              <option>Follow-Up Visit</option>
+              <option>Diagnostic / Lab Tests</option>
+              <option>Surgical Consultation</option>
+              <option>Second Opinion</option>
+              <option>Preventive Health Checkup</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="insurance">Insurance Provider (if applicable)</label>
+            <input type="text" id="insurance" placeholder="e.g. Allianz, Sehat Sahulat, Private, None"/>
+          </div>
+          <div class="form-group">
+            <label for="message">Describe Your Concern</label>
+            <textarea id="message" placeholder="Briefly describe your symptoms or reason for visit..."></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit Appointment Request</button>
+          <div class="success-msg" id="successMsg">
+            ✅ Your appointment request has been received! Our team will contact you within 2 hours to confirm your slot.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">+</div>
+          <span class="logo-text">Med<span>Care</span></span>
+        </div>
+        <p>Trusted, compassionate healthcare for over 25 years.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="appointment.html">Appointment</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Departments</h4>
+        <ul>
+          <li><a href="#">Cardiology</a></li>
+          <li><a href="#">Neurology</a></li>
+          <li><a href="#">Orthopedics</a></li>
+          <li><a href="#">Oncology</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">📞 +1 (800) 123-4567</a></li>
+          <li><a href="#">✉️ info@medcare.com</a></li>
+          <li><a href="#">🕐 Emergency: 24/7</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 MedCare Hospital. All rights reserved.</span>
+      <span>Privacy Policy · Terms of Service</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
